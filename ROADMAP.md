@@ -28,3 +28,7 @@
 - [2026-04-19] Scaffold project: package.json, src/api.js, src/index.js, .env.example, .gitignore, CLAUDE.md, ROADMAP.md
 - [2026-04-19] SSE transport pattern: src/server.js (factory), src/index.js (stdio), src/serve.js (SSE on port 8772), docker-compose.yml, unit tests (5 passing)
 - [2026-04-19] Deployed to Synology NAS (port 8772); container running — blocked on Walmart API key in `.env`
+
+## 🚫 Blocked
+
+- ❌ [docker-monitor:no-ghcr-image] Container `claude-walmart` uses `node:20-alpine` — migrate to `ghcr.io/aldarondo/...` with a GitHub Actions build-push workflow — 2026-04-22 08:00 UTC
