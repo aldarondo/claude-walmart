@@ -1,14 +1,14 @@
 services:
   claude-walmart:
-    image: node:20-alpine
+    image: ghcr.io/aldarondo/claude-walmart:latest
     container_name: claude-walmart
     restart: unless-stopped
-    working_dir: /app
-    volumes:
-      - .:/app
-      - /app/node_modules
     environment:
       - WALMART_API_KEY=${WALMART_API_KEY}
       - PORT=${PORT:-8772}
-    command: node src/serve.js
     network_mode: host
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
