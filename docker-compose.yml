@@ -6,6 +6,9 @@ services:
     environment:
       - WALMART_API_KEY=${WALMART_API_KEY}
       - PORT=${PORT:-8772}
+    volumes:
+      - ./logs:/app/logs
+    command: sh -c "node src/serve.js 2>&1 | tee -a /app/logs/app.log"
     network_mode: host
     logging:
       driver: "json-file"
