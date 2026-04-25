@@ -9,8 +9,8 @@
 ## Backlog
 
 ### [Code] Build & Infrastructure
-- [ ] `[Code]` Add GHCR build-push workflow — migrate container from `node:20-alpine` to a versioned GHCR image (`ghcr.io/aldarondo/...`) with GitHub Actions auto-deploy
-- [ ] `[Code]` Add weekly scheduled rebuild — GitHub Actions `schedule: cron` to repull and push a fresh image every week, picking up base-image security patches
+- [x] `[Code]` 2026-04-23 — Add GHCR build-push workflow — migrate container from `node:20-alpine` to a versioned GHCR image (`ghcr.io/aldarondo/...`) with GitHub Actions auto-deploy
+- [x] `[Code]` 2026-04-23 — Add weekly scheduled rebuild — GitHub Actions `schedule: cron` to repull and push a fresh image every week, picking up base-image security patches
 
 ### [Code] Core
 - [ ] Verify live API response shape against `normalise()` once API key is available; adjust field mapping if needed
@@ -25,6 +25,7 @@
 - [ ] Add `search_by_upc` tool — lookup product by UPC/barcode
 
 ## Completed
+- [2026-04-23] GHCR build-push workflow and weekly scheduled rebuild added to `.github/workflows/build.yml`; Dockerfile on `node:22-alpine`
 - [2026-04-19] Scaffold project: package.json, src/api.js, src/index.js, .env.example, .gitignore, CLAUDE.md, ROADMAP.md
 - [2026-04-19] SSE transport pattern: src/server.js (factory), src/index.js (stdio), src/serve.js (SSE on port 8772), docker-compose.yml, unit tests (5 passing)
 - [2026-04-19] Deployed to Synology NAS (port 8772); container running — blocked on Walmart API key in `.env`
