@@ -7,7 +7,7 @@ services:
       - WALMART_API_KEY=${WALMART_API_KEY}
       - PORT=${PORT:-8772}
     volumes:
-      - ./logs:/app/logs
+      - /volume1/docker/claude-walmart/logs:/app/logs
     network_mode: host
     logging:
       driver: "json-file"
