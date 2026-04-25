@@ -31,5 +31,9 @@
 - [2026-04-19] Deployed to Synology NAS (port 8772); container running — blocked on Walmart API key in `.env`
 
 ## 🚫 Blocked
+<<<<<<< Updated upstream
 
 - ❌ [docker-monitor:no-ghcr-image] Container `claude-walmart` uses `node:20-alpine` — migrate to `ghcr.io/aldarondo/...` with a GitHub Actions build-push workflow — 2026-04-23 08:00 UTC
+=======
+- `[Human]` Obtain Walmart API key at https://developer.walmart.com → fill `.env` → verify live API response shape
+>>>>>>> Stashed changes
