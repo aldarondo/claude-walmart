@@ -31,7 +31,6 @@
 - [2026-04-19] Deployed to Synology NAS (port 8772); container running — blocked on Walmart API key in `.env`
 
 ## 🚫 Blocked
-- ❌ [docker-monitor:container-stopped] Container `claude-walmart` is not running on the NAS — check `docker logs claude-walmart` and restart — 2026-10-22 13:55 UTC
 
 <<<<<<< Updated upstream
 
